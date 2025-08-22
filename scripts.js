@@ -6,21 +6,25 @@
   JavaScript minimal enhances performance and accessibility.
 */
 
-document.addEventListener('DOMContentLoaded', () => {
+
   // Mobile navigation toggle
+ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('nav-toggle');
   const navbar = document.getElementById('navbar');
   const navLinks = navbar.querySelectorAll('a');
 
   navToggle.addEventListener('click', () => {
     navbar.classList.toggle('active');
+    navToggle.classList.toggle('active'); // ✨ Add this line
   });
-  // Close navigation on link click (mobile)
+
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       navbar.classList.remove('active');
+      navToggle.classList.remove('active'); // ✨ Close icon reset
     });
   });
+});
 
 // Share this page top button
 function shareSite() {
@@ -34,6 +38,7 @@ function shareSite() {
 
 
   // Insert current year in footer
+document.addEventListener('DOMContentLoaded', () => {
   const yearSpan = document.getElementById('year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
