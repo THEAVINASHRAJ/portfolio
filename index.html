@@ -7,6 +7,17 @@
   <meta name="description" content="Portfolio of Avinash Raj – a results-driven full-stack marketer and growth strategist with 5+ years experience driving revenue and launching products for SaaS organisations." />
   <meta name="keywords" content="Avinash Raj, marketing innovator, growth strategist, product marketing, lead generation, SaaS marketing, portfolio" />
   <meta name="author" content="Avinash Raj" />
+  <!-- Allow search engines to index the homepage and follow links -->
+  <meta name="robots" content="index, follow" />
+  <!-- Favicon -->
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/a.png" type="image/png">
+  <!-- Google Tag Manager HEAD -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5N8PWQSP');</script>
+  <!-- End Google Tag Manager -->
   <!-- Preconnects for faster font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,42 +28,49 @@
   <script defer src="scripts.js"></script>
 </head>
 <body>
+  <!-- Google Tag Manager BODY (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N8PWQSP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Header Navigation -->
-  <header class="site-header">
-    <div class="container header-container">
-      <div class="logo"><a href="#">Avinash&nbsp;Raj</a></div>
-      <nav class="nav" id="navbar">
-        <ul class="nav-list">
-        <!-- <li><a href="#impact">Impact</a></li>
-          <li><a href="#experience">Experience</a></li> --> 
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="certifications.html">Certifications</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-           <li><a href="about.html">About</a></li>
-          <li><button id="share-btn" class="share-btn" type="button">Share</button></li>
+ <header class="site-header">
+  <div class="container header-container">
+    <div class="logo"><a href="#">Avinash&nbsp;Raj</a></div>
+    <nav class="nav" id="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- Link to AI Chat page -->
+        <li><a href="gpt.html">AI Chat</a></li>
+        <li><button id="share-btn" class="share-btn" type="button">Share</button></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span class="burger"></span>
+      <span class="burger"></span>
+      <span class="burger"></span>
+    </button>
+  </div>
+</header>
 
-        </ul>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </button>
-    </div>
-  </header>
 
-  
+
+ 
 
   <!-- Hero section -->
   <section id="hero" class="hero">
     <img src="https://iili.io/K95J0Nt.png" alt="Dynamic abstract gradient with swirling lines representing innovation" class="hero-bg" />
     <div class="hero-content container">
-      <h1 class="hero-title">Marketing Innovator &amp; Growth Strategist</h1>
-      <p class="hero-subtitle">Driving revenue, launching products and unlocking potential through data, creativity and technology.</p>
+      <h1 class="hero-title">Marketing leader for field‑service SaaS</h1>
+      <p class="hero-subtitle">Turning product strengths into pipeline and revenue. Specialised in GTM, lifecycle and proof—video, content and automation that move metrics.</p>
       <div class="hero-actions">
-        <a href="https://wa.link/5t7876" class="btn primary-btn">Let’s Connect</a>
-        <a href="https://www.linkedin.com/in/theavinashraj" class="btn secondary-btn" target="_blank" rel="noopener">View LinkedIn</a>
+        <!-- Primary call to action linking to the Impact section that showcases results -->
+        <a href="#impact" class="btn primary-btn">View outcomes</a>
+        <!-- Secondary call to action to start a conversation -->
+        <a href="https://wa.link/j7pdmj" class="btn secondary-btn" target="_blank" rel="noopener">Message on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -88,6 +106,7 @@
   <section id="impact" class="impact">
   <div class="container impact-container">
     <h2 class="section-title" style="color: #121f2e;">Impact at a Glance</h2>
+
     <p class="impact-subtext">Delivering measurable results across growth, branding, and product marketing</p>
 
     <div class="stats-grid">
@@ -470,7 +489,7 @@
     
     <!-- Left: QR Code (Desktop only) -->
     <div class="footer-qr desktop-only">
-      <img src="https://iili.io/K95Hfpt.png" alt="Scan QR to connect with Avinash" />
+      <img src="https://iili.io/KHdlsvs.png" alt="Scan QR to connect with Avinash" />
       <p>Scan to connect on WhatsApp</p>
     </div>
 
@@ -496,11 +515,11 @@
       </div>
     </div>
 
-    <!-- Right: WhatsApp CTA -->
-    <div class="footer-whatsapp desktop-only">
-      <a class="btn primary-btn wide" href="https://wa.link/5t7876" target="_blank" rel="noopener" id="wa-copy">
-          Message on WhatsApp
-        </a>
+    <!-- Right: WhatsApp CTA (now visible on all screen sizes) -->
+    <div class="footer-whatsapp">
+      <a class="btn primary-btn wide wa-button" href="https://wa.link/j7pdmj" target="_blank" rel="noopener">
+        Message on WhatsApp
+      </a>
     </div>
   </div>
   <div class="container footer-bottom">
@@ -520,6 +539,25 @@
       </div>
     </div>
   </div>
+
+  <!-- GPT Chat Modal -->
+  <div id="gpt-chat-modal" class="gpt-modal">
+    <div class="gpt-card">
+      <span id="close-chat" class="close-chat">&#10005;</span>
+      <div class="gpt-header">
+        <div class="status-dot"></div>
+        <strong>Growth &amp; Product Strategist</strong>
+      </div>
+      <div id="gpt-thread" class="gpt-thread"></div>
+      <form id="gpt-form" class="gpt-form" autocomplete="off">
+        <input id="gpt-input" type="text" placeholder="Ask a growth question..." required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating AI chat launcher -->
+  <a href="#" class="gpt-launcher" aria-label="Chat with Avinash GPT">AI Chat</a>
 
 
 </body>
