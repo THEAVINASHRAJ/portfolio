@@ -120,6 +120,8 @@ a:hover {
   height: 2px;
   background-color: var(--color-accent);
   transition: width var(--transition-fast);
+  margin-top: 12rem;
+  background: blur(10px);
 }
 
 .nav-list li a:hover::after {
@@ -134,7 +136,6 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  margin-top: 12rem;
   
 }
 
