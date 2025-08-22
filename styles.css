@@ -102,6 +102,8 @@ a:hover {
   display: flex;
   list-style: none;
   gap: 2rem;
+  margin-top: 12rem;
+  background: blur(10px);
 }
 
 .nav-list li a {
