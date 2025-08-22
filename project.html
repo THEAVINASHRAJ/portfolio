@@ -11,6 +11,15 @@
 
   <!-- Privacy/search -->
   <meta name="robots" content="noindex, nofollow" />
+  <!-- Favicon -->
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/a.png" type="image/png">
+  <!-- Google Tag Manager HEAD -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5N8PWQSP');</script>
+  <!-- End Google Tag Manager -->
 
   <!-- Fonts & CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,38 +30,27 @@
   <!-- Script bundle -->
   <script defer src="scripts.js"></script>
 
-  <!-- Password gate (one-time per session). Change PASSWORD_HERE below. -->
-  <script>
-    (function () {
-      const KEY = "prj_access_granted_v1";
-      if (sessionStorage.getItem(KEY)) return;
-
-      const pass = prompt("This page is private. Enter the password to continue:");
-      if (!pass || pass.trim() !== "Hidden") {
-        // No access: go back if possible, otherwise land on home.
-        if (history.length > 1) history.back();
-        else window.location.href = "index.html";
-      } else {
-        sessionStorage.setItem(KEY, "1");
-      }
-    })();
-  </script>
+  <!-- Password gate handled via overlay (see footer for markup). No prompt used here. -->
 </head>
 
 <body>
+  <!-- Google Tag Manager BODY (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N8PWQSP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- Header Navigation (kept consistent) -->
   <header class="site-header">
     <div class="container header-container">
       <div class="logo"><a href="index.html">Avinash&nbsp;Raj</a></div>
       <nav class="nav" id="navbar">
         <ul class="nav-list">
-          <!-- <li><a href="#impact">Impact</a></li>
-          <li><a href="#experience">Experience</a></li> --> 
           <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="project.html">Projects</a></li>
+          <li><a href="project.html" aria-current="page">Projects</a></li>
           <li><a href="certifications.html">Certifications</a></li>
           <li><a href="index.html#testimonials">Testimonials</a></li>
-           <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- AI Chat link -->
+          <li><a href="gpt.html">AI Chat</a></li>
           <li><button id="share-btn" class="share-btn" type="button">Share</button></li>
         </ul>
       </nav>
@@ -66,7 +64,42 @@
   <section id="projects" class="projects">
     <div class="container projects-container">
       <h2 class="section-title">Projects &amp; Work Samples</h2>
-      <p class="section-intro"> Avinash Raj's selected work (proffessional career) demonstrating product marketing, growth strategy, content development, and video.</p>
+      <p class="section-intro">Avinash Raj's selected work demonstrating measurable impact across product marketing, growth strategy, content development and automation.</p>
+
+      <!-- Highlights showing high-level impact metrics -->
+      <div class="project-highlights">
+        <div class="highlight-card">
+          <h4>35+ GTM Plays</h4>
+          <p>Go‑to‑market launches delivered with revenue impact.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>150+ Videos & Demos</h4>
+          <p>Produced engaging content to drive activation and adoption.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>$10M+ Revenue</h4>
+          <p>Programs influencing monthly revenue across products.</p>
+        </div>
+      </div>
+
+      <!-- Featured Case Studies -->
+      <div class="case-studies">
+        <h3 class="section-subtitle">Featured Case Studies</h3>
+        <div class="case-grid">
+          <div class="case-card">
+            <h4>Unified Payment Solutions Launch</h4>
+            <p><strong>Situation:</strong> Launching an integrated payments platform across multiple markets.</p>
+            <p><strong>Actions:</strong> Developed GTM strategy, created messaging and collateral, and orchestrated webinars and demos.</p>
+            <p><strong>Results:</strong> 3× lead conversion and $2M in pipeline within 60&nbsp;days.</p>
+          </div>
+          <div class="case-card">
+            <h4>Zuper Video Campaign</h4>
+            <p><strong>Situation:</strong> Low adoption due to complex product features.</p>
+            <p><strong>Actions:</strong> Produced 150+ short demos, launched a YouTube channel and email drip campaigns.</p>
+            <p><strong>Results:</strong> 9K+ subscribers and a 20% boost in feature adoption.</p>
+          </div>
+        </div>
+      </div>
 
       <div class="projects-grid">
         <div class="project-card">
@@ -291,8 +324,8 @@
   <footer class="site-footer dark-theme">
     <div class="footer-container">
       <div class="footer-qr desktop-only">
-        <img src="https://iili.io/K95Hfpt.png" alt="Scan QR to connect with Avinash" />
-        <p>Scan to connect</p>
+        <img src="https://iili.io/KHdlsvs.png" alt="Scan QR to connect with Avinash" />
+        <p>Scan to connect on WhatsApp</p>
       </div>
 
       <div class="footer-social">
@@ -307,7 +340,7 @@
       </div>
 
       <div class="footer-whatsapp">
-        <a class="btn primary-btn wide wa-button" href="https://wa.link/5t7876" target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn primary-btn wide wa-button" href="https://wa.link/j7pdmj" target="_blank" rel="noopener">Message on WhatsApp</a>
       </div>
     </div>
 
@@ -329,5 +362,84 @@
       </div>
     </div>
   </div>
+
+  <!-- GPT Chat Modal -->
+  <div id="gpt-chat-modal" class="gpt-modal">
+    <div class="gpt-card">
+      <span id="close-chat" class="close-chat">&#10005;</span>
+      <div class="gpt-header">
+        <div class="status-dot"></div>
+        <strong>Growth &amp; Product Strategist</strong>
+      </div>
+      <div id="gpt-thread" class="gpt-thread"></div>
+      <form id="gpt-form" class="gpt-form" autocomplete="off">
+        <input id="gpt-input" type="text" placeholder="Ask a growth question..." required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Password Overlay -->
+  <div id="gate" class="gate">
+    <div class="gate__card" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <h2 id="gate-title">This page is private</h2>
+      <!-- Updated message instructing visitors to request the access code -->
+      <p class="gate__hint">Reach out to avinash for password to view content in this page.</p>
+      <form id="gate-form" class="gate__form" autocomplete="off">
+        <label class="gate__label" for="gate-input">Access code</label>
+        <div class="gate__field">
+          <input id="gate-input" type="password" inputmode="text" aria-describedby="gate-help" required />
+          <button type="button" class="gate__reveal" aria-label="Show/Hide password">👁</button>
+        </div>
+        <p id="gate-help" class="gate__help">Don’t have a code? Reach out to avinash to request one.</p>
+        <p id="gate-error" class="gate__error" role="alert" aria-live="polite"></p>
+        <div class="gate__actions">
+          <button type="submit" class="btn primary-btn">Continue</button>
+          <button type="button" id="gate-cancel" class="btn secondary-btn">Go back</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating AI chat launcher -->
+  <a href="#" class="gpt-launcher" aria-label="Chat with Avinash GPT">AI Chat</a>
+
+  <!-- Gating script for project page -->
+  <script>
+  (function() {
+    const KEY = "prj_access_granted_v2";
+    const SECRET = "Hidden"; // Replace with your password
+    const gate = document.getElementById('gate');
+    if (!gate) return;
+    // If already unlocked in this tab, hide gate immediately
+    if (sessionStorage.getItem(KEY)) {
+      gate.classList.add('gate--hide');
+      return;
+    }
+    const form = document.getElementById('gate-form');
+    const input = document.getElementById('gate-input');
+    const cancelBtn = document.getElementById('gate-cancel');
+    const reveal = document.querySelector('.gate__reveal');
+    const error = document.getElementById('gate-error');
+    setTimeout(() => { input && input.focus(); }, 100);
+    reveal.addEventListener('click', () => {
+      input.type = input.type === 'password' ? 'text' : 'password';
+    });
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const pass = (input.value || '').trim();
+      if (pass === SECRET) {
+        sessionStorage.setItem(KEY, '1');
+        gate.classList.add('gate--hide');
+        return;
+      }
+      error.textContent = 'Incorrect code. Try again.';
+    });
+    cancelBtn.addEventListener('click', () => {
+      if (history.length > 1) history.back();
+      else window.location.href = 'index.html';
+    });
+  })();
+  </script>
 </body>
 </html>
