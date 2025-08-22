@@ -70,7 +70,59 @@ a:hover {
  
 }
 
-/* Header & Navigation */
+/* Basic Header Styles */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(7, 26, 43, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HEADER STYLES */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(7, 26, 43, 0.95);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* LOGO */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* NAVIGATION */
 /* Navigation Styles */
 .nav {
   display: flex;
@@ -194,7 +246,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Optional: Add backdrop dark overlay when menu is active 
+/* Optional: Add backdrop dark overlay when menu is active */
 body.nav-open::before {
   content: '';
   position: fixed;
@@ -205,7 +257,7 @@ body.nav-open::before {
   background: rgba(0, 0, 0, 0.4);
   z-index: 98;
 }
-*/
+
 
 /* Hero Section */
 .hero {
@@ -463,7 +515,7 @@ body.nav-open::before {
 /* EXP Front Face */
 .card-front {
   background-color: #fff;
-  color: #1a1a1a;
+  color: #00183c;
   z-index: 2;
 }
 
@@ -477,14 +529,14 @@ body.nav-open::before {
 
 /* EXP Logo Image */
 .company-logo {
-  width: 100px;
+  width: 150px;
   height: auto;
   margin-bottom: 1rem;
 }
 
 /* EXP Typography on Front */
 .card-front p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   line-height: 1.5;
   color: #1a1a1a;
