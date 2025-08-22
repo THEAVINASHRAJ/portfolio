@@ -194,7 +194,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Optional: Add backdrop dark overlay when menu is active */
+/* Optional: Add backdrop dark overlay when menu is active 
 body.nav-open::before {
   content: '';
   position: fixed;
@@ -205,7 +205,7 @@ body.nav-open::before {
   background: rgba(0, 0, 0, 0.4);
   z-index: 98;
 }
-
+*/
 
 /* Hero Section */
 .hero {
