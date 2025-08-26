@@ -363,7 +363,7 @@
     </div>
   </div>
 
-  <!-- GPT Chat Modal -->
+  <!-- GPT Chat Modal 
   <div id="gpt-chat-modal" class="gpt-modal">
     <div class="gpt-card">
       <span id="close-chat" class="close-chat">&#10005;</span>
@@ -378,6 +378,7 @@
       </form>
     </div>
   </div>
+-->
 
   <!-- Password Overlay -->
   <div id="gate" class="gate">
@@ -401,8 +402,9 @@
     </div>
   </div>
 
-  <!-- Floating AI chat launcher -->
+  <!-- Floating AI chat launcher 
   <a href="#" class="gpt-launcher" aria-label="Chat with Avinash GPT">AI Chat</a>
+-->
 
   <!-- Gating script for project page -->
   <script>
@@ -411,7 +413,7 @@
     const SECRET = "Hidden"; // Replace with your password
     const gate = document.getElementById('gate');
     if (!gate) return;
-    // If already unlocked in this tab, hide gate immediately
+    // If already unlocked in this tab, hide the gate immediately
     if (sessionStorage.getItem(KEY)) {
       gate.classList.add('gate--hide');
       return;
@@ -433,7 +435,7 @@
         gate.classList.add('gate--hide');
         return;
       }
-      error.textContent = 'Incorrect code. Try again.';
+      error.textContent = 'Incorrect password. Try again.';
     });
     cancelBtn.addEventListener('click', () => {
       if (history.length > 1) history.back();
