@@ -1,8 +1,0 @@
-{
-  "name": "avinash-portfolio-functions",
-  "type": "module",
-  "private": true,
-  "dependencies": {
-    "openai": "^4.55.0"
-  }
-}
