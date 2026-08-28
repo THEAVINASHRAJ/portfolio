@@ -76,7 +76,6 @@
       --paper-faint: rgba(21,17,12,0.40);
       --emerald: #0f9d6b;
       --emerald-deep: #0a7c54;
-      --emerald-glow: rgba(15,157,107,0.10);
       --azure: #2563eb;
       --gold: #9a6a14;
       --rule: rgba(15,157,107,0.34);
@@ -256,6 +255,7 @@
     .funnel-tab { font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.02em; padding:7px 14px; border-radius:30px; border:1px solid var(--line2); background:transparent; color:var(--paper-dim); cursor:pointer; transition:all 0.2s; text-transform:uppercase; }
     .funnel-tab:hover { color:var(--paper); border-color:var(--paper-faint); }
     .funnel-tab.active { border-color:var(--emerald); color:var(--emerald); background:var(--emerald-glow); }
+    .funnel-note { font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.03em; color:var(--paper-faint); text-align:center; margin-top:16px; line-height:1.6; }
     .funnel-body { padding:24px; }
     .funnel-stages { display:flex; flex-direction:column; gap:9px; }
     .f-stage { display:flex; align-items:center; gap:16px; background:var(--ink3); border:1px solid var(--line); border-radius:12px; padding:14px 18px; cursor:pointer; position:relative; overflow:hidden; transition:border-color 0.25s, transform 0.25s; }
@@ -608,7 +608,7 @@
               <span>Avinash Raj · Senior Marketing Manager</span>
               <span class="chip">SaaS</span><span class="chip">Fintech</span><span class="chip">GTM</span>
             </div>
-            <p class="hero-sub">Seven years turning scrappy, zero-budget marketing into category-defining growth. From ICP research to the trade show floor, from a free-product pivot to <strong>$500M+ TPV on the way to $1Bn</strong>. A marketer who also ships working software.</p>
+            <p class="hero-sub">Seven years turning scrappy, zero-budget marketing into category-defining growth. From ICP research to the trade show floor, from a free-product pivot to <strong>$500M+ TPV on the way to $1Bn</strong>. Built a marketing team from one person to five. A marketer who also ships working software.</p>
             <div class="hero-actions">
               <a href="#work" class="btn-primary">See the Work</a>
               <a href="https://www.linkedin.com/in/theavinashraj" target="_blank" rel="noopener" class="btn-ghost">LinkedIn ↗</a>
@@ -648,7 +648,7 @@
       <div class="exp-head">
         <div class="reveal">
           <div class="eyebrow"><span class="idx">01</span> What Avinash Does</div>
-          <h2 class="h-section">One marketer.<br /><em>Full-stack</em> impact.</h2>
+          <h2 class="h-section">One marketer.<br />Then a <em>team.</em></h2>
         </div>
         <p class="lede reveal">From ICP research to closed pipeline, Avinash owns the entire motion rather than a single lane of it. Below is the operating range.</p>
       </div>
@@ -668,17 +668,23 @@
         <div class="ex-row reveal">
           <div class="ex-num">03</div>
           <div class="ex-title">Community-Led Growth</div>
-          <div><div class="ex-desc">Built ScanPay's pipeline through ICP communities rather than ads, joining where customers already gathered, listening first, then earning the sale.</div><div class="ex-tags"><span class="ex-tag">Community</span><span class="ex-tag">Organic Pipeline</span><span class="ex-tag">Trust-First</span></div></div>
+          <div><div class="ex-desc">Built ScanPay's pipeline through ICP communities, referral, and word-of-mouth rather than ads, joining where customers already gathered, listening first, then earning the sale.</div><div class="ex-tags"><span class="ex-tag">Community</span><span class="ex-tag">Referral</span><span class="ex-tag">Organic Pipeline</span><span class="ex-tag">Trust-First</span></div></div>
           <div class="ex-arrow">↗</div>
         </div>
         <div class="ex-row reveal">
           <div class="ex-num">04</div>
+          <div class="ex-title">Team &amp; Function Building</div>
+          <div><div class="ex-desc">Built the marketing function twice from nothing. Hired and trained the product marketing team at Zuper, then grew ScanPay from a one-person function into a team of four plus three agency partners.</div><div class="ex-tags"><span class="ex-tag">Hiring</span><span class="ex-tag">Team Leadership</span><span class="ex-tag">Agency Management</span><span class="ex-tag">Budget Ownership</span></div></div>
+          <div class="ex-arrow">↗</div>
+        </div>
+        <div class="ex-row reveal">
+          <div class="ex-num">05</div>
           <div class="ex-title">Content &amp; Proof Engine</div>
           <div><div class="ex-desc">150+ product demo videos, 200+ help articles, 30+ awareness videos, plus customer stories. Every asset built to move someone from interested to committed.</div><div class="ex-tags"><span class="ex-tag">Video</span><span class="ex-tag">Enablement Content</span><span class="ex-tag">Customer Stories</span></div></div>
           <div class="ex-arrow">↗</div>
         </div>
         <div class="ex-row reveal">
-          <div class="ex-num">05</div>
+          <div class="ex-num">06</div>
           <div class="ex-title">Events &amp; Trade Shows</div>
           <div><div class="ex-desc">Planned and ran ScanPay's full trade show presence across the USA, with 10 enterprise customers acquired directly through events.</div><div class="ex-tags"><span class="ex-tag">Field Marketing</span><span class="ex-tag">Booth Strategy</span><span class="ex-tag">Enterprise</span></div></div>
           <div class="ex-arrow">↗</div>
@@ -701,7 +707,7 @@
   <section class="funnel-sec" id="funnel">
     <div class="container">
       <div class="funnel-head">
-        <div class="reveal"><div class="eyebrow"><span class="idx">02</span> Live Funnel Simulator</div>
+        <div class="reveal"><div class="eyebrow"><span class="idx">02</span> Funnel Model</div>
         <h2 class="h-section">This is how Avinash<br /><em>thinks</em> about growth.</h2></div>
         <p class="lede reveal" style="margin-left:auto;margin-right:auto;text-align:center;">Pick a scenario, then click any stage to see the marketing logic behind the numbers.</p>
       </div>
@@ -720,6 +726,7 @@
           <div class="funnel-insight" id="funnelInsight">Click any stage above to reveal the strategy Avinash applies at that layer of the funnel.</div>
         </div>
       </div>
+      <p class="funnel-note reveal">Illustrative model built on Avinash's operating benchmarks, not reported client results. The strategy behind each stage is the point.</p>
     </div>
   </section>
 
@@ -738,10 +745,10 @@
           <p class="case-headline">On the way to $1Bn TPV, without a big budget or a big team.</p>
         </div>
         <div class="case-detail reveal">
-          <p class="case-body">When Avinash joined ScanPay, the home services payments market was saturated. Every competitor had years of head start and bigger budgets. Instead of chasing them, he changed the game. He saw that contractors in Facebook groups and trade communities were already talking about payment pain, but no brand was listening or showing up as a peer. ScanPay's reps started joining those spaces as members who understood the job, not as salespeople. A bold pricing model, with no monthly fees and the lowest transaction fee, removed the biggest friction in the sales conversation. Month-over-month merchant growth hit 20% on average, and acquisition cost dropped by a third.</p>
+          <p class="case-body">When Avinash joined ScanPay as the only marketer, the home services payments market was saturated. Every competitor had years of head start and bigger budgets. Instead of chasing them, he changed the game. He saw that contractors in Facebook groups and trade communities were already talking about payment pain, but no brand was listening or showing up as a peer. ScanPay's reps started joining those spaces as members who understood the job, not as salespeople. A bold pricing model, with no monthly fees and the lowest transaction fee, removed the biggest friction in the sales conversation. He has since built that one-person function into a team of four plus three agency partners. The merchant base grew from 400 to 2,500+, processed volume passed $500M at 3× year-over-year growth, and acquisition cost dropped by a third.</p>
           <div class="case-results">
             <div class="case-result"><div class="case-result-num em">3×</div><div class="case-result-cap">YoY TPV growth in 24 months</div></div>
-            <div class="case-result"><div class="case-result-num az">+20%</div><div class="case-result-cap">Avg monthly merchant growth</div></div>
+            <div class="case-result"><div class="case-result-num az">$500M+ </div><div class="case-result-cap">Payments Processed</div></div>
             <div class="case-result"><div class="case-result-num gd">−33%</div><div class="case-result-cap">Customer acquisition cost</div></div>
             <div class="case-result"><div class="case-result-num">2,500+</div><div class="case-result-cap">Active merchants, from 400</div></div>
           </div>
@@ -755,7 +762,7 @@
           <p class="case-headline">A product marketing machine that shortened the sales cycle by a quarter.</p>
         </div>
         <div class="case-detail reveal">
-          <p class="case-body">Zuper's field service platform was powerful and comprehensive, the kind of product where buyers often talked themselves out of it before making a decision. Avinash built a content and enablement system to close that gap. He produced 400+ resources and 150+ demo videos, grew the YouTube channel by 9K+ subscribers, and created playbooks reps could deploy at every stage of the deal. He also ran ABM campaigns targeting field service operations leaders at mid-market companies. The sales cycle shortened by 25%, and support ticket volume dropped by 35%.</p>
+          <p class="case-body">Zuper's field service platform was powerful and comprehensive, the kind of product where buyers often talked themselves out of it before making a decision. Avinash built the product marketing function from nothing to close that gap. He hired and trained the team, produced 500+ resources including 150+ demo videos, grew the YouTube channel from zero to 9K+ subscribers, and created playbooks reps could deploy at every stage of the deal. He also ran ABM campaigns targeting field service operations leaders at mid-market companies. The sales cycle shortened by 25%, and support ticket volume dropped by 35%.</p>
           <div class="case-results">
             <div class="case-result"><div class="case-result-num em">−25%</div><div class="case-result-cap">Sales cycle length</div></div>
             <div class="case-result"><div class="case-result-num az">9K+</div><div class="case-result-cap">YouTube subscribers from zero</div></div>
@@ -772,7 +779,7 @@
           <p class="case-headline">$0 to $10M+ monthly revenue through zero-touch onboarding and paid growth at scale.</p>
         </div>
         <div class="case-detail reveal">
-          <p class="case-body">Starting as an intern and growing into the lead of product marketing, Avinash built JungleWorks' GTM motion from nearly nothing. He ran organic and paid growth across Google Ads and social, managing $120K+ in monthly ad spend at a consistent 7× return. He also pioneered a zero-touch onboarding model, where the product sold itself through demos and activation flows, generating 100 zero-touch sales in the first quarter of the launch. Week-over-week adoption grew at 100% before plateau.</p>
+          <p class="case-body">Starting as an intern and growing into Product Marketing Manager, Avinash built the GTM motion for JungleWorks' four-product B2B SaaS stack from nearly nothing. He ran organic and paid growth across Google Ads and social, managing $120K+ in monthly ad spend at a consistent 7× return. He also pioneered a zero-touch onboarding model, where the product sold itself through demos and activation flows, generating 100 zero-touch sales in the first quarter of the launch. Week-over-week adoption grew at 100% before plateau.</p>
           <div class="case-results">
             <div class="case-result"><div class="case-result-num em">$10M+</div><div class="case-result-cap">Monthly revenue influenced</div></div>
             <div class="case-result"><div class="case-result-num az">7×</div><div class="case-result-cap">Return on ad spend at peak</div></div>
@@ -831,8 +838,8 @@
         <div>
           <div class="xp-role">Senior Marketing Manager</div>
           <div class="xp-co-name">ScanPay · Fintech / Home Services Payments (USA)</div>
-          <p class="xp-desc">Sole marketer responsible for end-to-end marketing at a fintech startup serving home service professionals across the USA. Built and ran the ICP-community strategy that replaced paid acquisition as the primary growth channel, managed 85+ trade show operations, and owned website, listings, reviews, and reputation. Grew the merchant base from 400 to 2,500+ in two years at 20% average month-on-month growth.</p>
-          <div class="xp-kpis"><span class="xp-kpi">3× TPV Growth</span><span class="xp-kpi">2,500+ Merchants</span><span class="xp-kpi">20% MoM Growth</span><span class="xp-kpi">10 Enterprise Wins</span><span class="xp-kpi">−33% CAC</span><span class="xp-kpi">84 NPS</span></div>
+          <p class="xp-desc">Owns end-to-end marketing at a fintech startup serving home service professionals across the USA, reporting to the CEO. Joined as the sole marketer and built the function into a team of four plus three agency partners. Led go-to-market for the ScanPay Wallet launch, ran the ICP-community strategy that replaced paid acquisition as the primary growth channel, managed 80+ trade show operations, and owned website, listings, reviews, and reputation. Grew the merchant base from 400 to 2,500+ and scaled processed volume past $500M at 3× year-over-year growth.</p>
+          <div class="xp-kpis"><span class="xp-kpi">3× YoY TPV Growth</span><span class="xp-kpi">$500M+ Processed</span><span class="xp-kpi">2,500+ Merchants</span><span class="xp-kpi">10 Enterprise Wins</span><span class="xp-kpi">−33% CAC</span><span class="xp-kpi">84 NPS</span></div>
         </div>
       </div>
       <div class="xp-item reveal">
@@ -840,16 +847,16 @@
         <div>
           <div class="xp-role">Product Marketing Manager</div>
           <div class="xp-co-name">Zuper · Field Service Management SaaS (USA)</div>
-          <p class="xp-desc">Led product marketing for Zuper's field service platform serving mid-market enterprises in the USA. Drove 30+ GTM launches in 18 months, created 300+ digital assets, and built the YouTube presence from zero to 9,000+ subscribers. Designed ABM programs and ran sales enablement that cut the sales cycle by 25% and reduced support volume by 35%.</p>
-          <div class="xp-kpis"><span class="xp-kpi">30+ GTM Launches</span><span class="xp-kpi">300+ Assets</span><span class="xp-kpi">−25% Sales Cycle</span><span class="xp-kpi">9K Subscribers</span><span class="xp-kpi">ABM</span></div>
+          <p class="xp-desc">Built and led product marketing for Zuper's field service platform serving mid-market enterprises in the USA, hiring and training the team behind the function. Drove 30+ GTM launches in 18 months, created 500+ content and enablement assets, and built the YouTube presence from zero to 9,000+ subscribers. Designed ABM programs and ran sales enablement that cut the sales cycle by 25% and reduced support volume by 35%.</p>
+          <div class="xp-kpis"><span class="xp-kpi">30+ GTM Launches</span><span class="xp-kpi">500+ Assets</span><span class="xp-kpi">−25% Sales Cycle</span><span class="xp-kpi">9K Subscribers</span><span class="xp-kpi">Built the Function</span></div>
         </div>
       </div>
       <div class="xp-item reveal">
         <div class="xp-when">Aug 2019 — Jun 2022<div class="co"><img src="https://i.postimg.cc/0QTP92dP/JW.png" alt="JungleWorks" /></div></div>
         <div>
-          <div class="xp-role">Growth Marketer → Product Marketing Lead</div>
-          <div class="xp-co-name">JungleWorks · On-Demand &amp; Hyperlocal SaaS (Global)</div>
-          <p class="xp-desc">Joined as a marketing intern and grew into product marketing leadership in three years. Owned organic and paid growth, GTM strategy, and zero-touch onboarding. Managed $120K+ in monthly ad spend at 7× return, and built the self-serve acquisition funnel that generated 100 zero-touch sales in the first quarter of the launch.</p>
+          <div class="xp-role">Growth Marketer → Product Marketing Manager</div>
+          <div class="xp-co-name">JungleWorks · B2B SaaS Stack for On-Demand Businesses (Global)</div>
+          <p class="xp-desc">Joined as a marketing intern and grew into Product Marketing Manager in three years, marketing a stack of four B2B SaaS products for on-demand and hyperlocal businesses. Owned organic and paid growth, GTM strategy, and zero-touch onboarding. Managed $120K+ in monthly ad spend at 7× return, and built the self-serve acquisition funnel that generated 100 zero-touch sales in the first quarter of the launch.</p>
           <div class="xp-kpis"><span class="xp-kpi">$10M+ Revenue</span><span class="xp-kpi">7× ROAS</span><span class="xp-kpi">$120K+ Ad Spend</span><span class="xp-kpi">Zero-Touch Onboarding</span><span class="xp-kpi">Promoted Twice</span></div>
         </div>
       </div>
@@ -939,7 +946,7 @@
       <div class="certs-head reveal">
         <div class="eyebrow"><span class="idx">07</span> Certifications</div>
         <h2 class="h-section">Credentials that<br />back the <em>work.</em></h2>
-        <p class="lede">Certified across product marketing, growth, analytics, and digital advertising.</p>
+        <p class="lede">Certified across product marketing, growth, analytics, and digital advertising. Recognized as a LinkedIn Top Voice in Digital Marketing.</p>
       </div>
       <div class="certs-grid">
         <div class="cert reveal"><img src="https://iili.io/K91Eye1.png" alt="Go-to-Market Expert certification" loading="lazy" /><div class="cert-cap">Go-to-Market Expert</div></div>
@@ -980,15 +987,16 @@
         <div class="reveal">
           <div class="eyebrow"><span class="idx">09</span> About</div>
           <h2 class="h-section" style="margin-bottom:28px;">Built for startups that can't<br />afford to get marketing <em>wrong.</em></h2>
-          <p class="about-body">Avinash Raj brings together technical depth and marketing strategy, with a background in computer science and an MBA in marketing. He builds growth systems that turn strong technology into scalable brands.</p>
+          <p class="about-body">Avinash Raj brings together technical depth and marketing strategy, with a background in computer science and an MBA in marketing from IIT Patna. He builds growth systems that turn strong technology into scalable brands.</p>
           <p class="about-body">He is driven by growth and impact, which keeps him constantly learning. He holds several certifications, including product marketing credentials from the Product Marketing Alliance, and is recognized as a <strong>LinkedIn Top Voice in Digital Marketing.</strong></p>
         </div>
         <div class="about-points reveal">
           <div class="about-point"><div class="about-point-n">A1</div><div class="about-point-t"><strong>Thinks commercially, not just creatively.</strong> Every campaign ties back to a revenue number, not a vanity metric.</div></div>
           <div class="about-point"><div class="about-point-n">A2</div><div class="about-point-t"><strong>Has run on no budget and managed $120K+ monthly in paid media.</strong> He adapts to the resources available, not the ones he wishes he had.</div></div>
-          <div class="about-point"><div class="about-point-n">A3</div><div class="about-point-t"><strong>Deeply customer-obsessed.</strong> His best work at ScanPay started with weeks of listening to contractors before writing a single word of copy.</div></div>
-          <div class="about-point"><div class="about-point-n">A4</div><div class="about-point-t"><strong>Never missed a deadline over a creative gap.</strong> Sales never lost an opportunity because a deck wasn't ready or a trade show wasn't planned.</div></div>
-          <div class="about-point"><div class="about-point-n">A5</div><div class="about-point-t"><strong>Ships software, not just strategy.</strong> A LinkedIn Top Voice who also deploys working AI tools his own team uses every day.</div></div>
+          <div class="about-point"><div class="about-point-n">A3</div><div class="about-point-t"><strong>Builds functions, then teams.</strong> He hired and trained product marketing at Zuper and grew ScanPay's marketing from one person to five.</div></div>
+          <div class="about-point"><div class="about-point-n">A4</div><div class="about-point-t"><strong>Deeply customer-obsessed.</strong> His best work at ScanPay started with weeks of listening to contractors before writing a single word of copy.</div></div>
+          <div class="about-point"><div class="about-point-n">A5</div><div class="about-point-t"><strong>Never missed a deadline over a creative gap.</strong> Sales never lost an opportunity because a deck wasn't ready or a trade show wasn't planned.</div></div>
+          <div class="about-point"><div class="about-point-n">A6</div><div class="about-point-t"><strong>Ships software, not just strategy.</strong> A LinkedIn Top Voice who also deploys working AI tools his own team uses every day.</div></div>
         </div>
       </div>
     </div>
@@ -1210,7 +1218,7 @@
           {icon:'💳',name:'Close',desc:'Contract signed',count:10,pct:0.45},
           {icon:'⭐',name:'Advocacy',desc:'Case study, referral, speaking slot',count:4,pct:0.18},
         ],
-        metrics:[{l:'Events/Yr',v:'35'},{l:'Leads/Event',v:'18'},{l:'Close Rate',v:'15%'},{l:'Rev/Event',v:'$80K+'}],
+        metrics:[{l:'Events/Yr',v:'35'},{l:'Leads/Event',v:'18'},{l:'Close Rate',v:'15%'},{l:'Cycle',v:'47 days'}],
         insights:{
           'Awareness':'<strong>Strategy:</strong> Avinash selects trade shows by ICP density, not brand exposure. Every booth dollar maps to a specific vertical and job title.',
           'Interest':'<strong>Strategy:</strong> Booth design and demo flow qualify a visitor in 90 seconds. No brochures, just conversations that surface pain fast.',
